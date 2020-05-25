@@ -6,8 +6,12 @@ process.on('message', compare);
 
 function compare (data) {
   var { referencePath, testPath, resembleOutputSettings, pair } = data;
+  const resembleOptions = {
+    ignore: 'nothing',
+    output: resembleOutputSettings
+  }
   var promise = compareHashes(referencePath, testPath)
-    .catch(() => compareResemble(referencePath, testPath, pair.misMatchThreshold, resembleOutputSettings, pair.requireSameDimensions));
+    .catch(() => compareResemble(referencePath, testPath, pair.misMatchThreshold, resembleOptions, pair.requireSameDimensions));
   promise
     .then(function (data) {
       pair.diff = data;

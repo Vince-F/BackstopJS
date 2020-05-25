@@ -5,21 +5,8 @@ const path = require('path');
 module.exports = function (testPath, data) {
   var failedDiffFilename = getFailedDiffFilename(testPath);
   console.log('   See:', failedDiffFilename);
-
-  var failedDiffStream = fs.createWriteStream(failedDiffFilename);
-  var ext = failedDiffFilename.substring(failedDiffFilename.lastIndexOf('.') + 1);
-
-  if (ext === 'png') {
-    var storageStream = data.getDiffImage()
-      .pack()
-      .pipe(failedDiffStream);
-    return streamToPromise(storageStream, failedDiffFilename);
-  }
-
-  if (ext === 'jpg' || ext === 'jpeg') {
-    fs.writeFileSync(failedDiffFilename, data.getDiffImageAsJPEG(85));
-    return Promise.resolve(failedDiffFilename);
-  }
+  fs.writeFileSync(failedDiffFilename, data.getBuffer());
+  return Promise.resolve(failedDiffFilename);
 };
 
 function getFailedDiffFilename (testPath) {
