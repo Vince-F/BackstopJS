@@ -2,10 +2,12 @@ var path = require('path');
 var map = require('p-map');
 var fs = require('fs');
 var cp = require('child_process');
+var WorkerThread = require("worker_threads");
 
 var Reporter = require('./../Reporter');
 var logger = require('./../logger')('compare');
 var storeFailedDiffStub = require('./store-failed-diff-stub.js');
+const WorkerPool = require("./workerPool");
 
 var ASYNC_COMPARE_LIMIT = 20;
 
@@ -57,10 +59,11 @@ function comparePair (pair, report, config, compareConfig) {
   return compareImages(referencePath, testPath, pair, resembleOutputSettings, Test);
 }
 
-function compareImages (referencePath, testPath, pair, resembleOutputSettings, Test) {
+function compareImages (referencePath, testPath, pair, resembleOutputSettings, Test, pool) {
   return new Promise(function (resolve, reject) {
-    var worker = cp.fork(require.resolve('./compare'));
-    worker.send({
+    var worker = pool.getWorker();
+    
+    worker.execute({
       referencePath: referencePath,
       testPath: testPath,
       resembleOutputSettings: resembleOutputSettings,
@@ -68,7 +71,7 @@ function compareImages (referencePath, testPath, pair, resembleOutputSettings, T
     });
 
     worker.on('message', function (data) {
-      worker.kill();
+      worker.notifyFinished();
       Test.status = data.status;
       pair.diff = data.diff;
 
@@ -89,9 +92,10 @@ module.exports = function (config) {
 
   var report = new Reporter(config.ciReport.testSuiteName);
   var asyncCompareLimit = config.asyncCompareLimit || ASYNC_COMPARE_LIMIT;
+  const pool = new WorkerPool(require.resolve('./compare'));
   report.id = config.id;
 
-  return map(compareConfig.testPairs, pair => comparePair(pair, report, config, compareConfig), { concurrency: asyncCompareLimit })
+  return map(compareConfig.testPairs, pair => comparePair(pair, report, config, compareConfig, pool), { concurrency: asyncCompareLimit })
     .then(
       () => report,
       e => logger.error('The comparison failed with error: ' + e)
