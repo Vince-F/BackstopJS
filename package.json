@@ -99,6 +99,7 @@
     "resemblejs": "^3.2.4",
     "resolve": "^1.11.1",
     "super-simple-web-server": "^1.1.2",
-    "temp": "^0.8.3"
+    "temp": "^0.8.3",
+    "wasm-imagemagick": "^1.2.7"
   }
 }

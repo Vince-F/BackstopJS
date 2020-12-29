@@ -1,5 +1,5 @@
 var compareHashes = require('./compare-hash');
-var compareResemble = require('./compare-resemble');
+var compareImage = require('./compare-image');
 var storeFailedDiff = require('./store-failed-diff.js');
 
 process.on('message', compare);
@@ -11,7 +11,7 @@ function compare (data) {
     output: resembleOutputSettings
   }
   var promise = compareHashes(referencePath, testPath)
-    .catch(() => compareResemble(referencePath, testPath, pair.misMatchThreshold, resembleOptions, pair.requireSameDimensions));
+    .catch(() => compareImage(referencePath, testPath, pair.misMatchThreshold, resembleOptions, pair.requireSameDimensions));
   promise
     .then(function (data) {
       pair.diff = data;

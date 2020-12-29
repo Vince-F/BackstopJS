@@ -3,8 +3,8 @@
   "tests": [
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_Simple_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_Simple_0_document_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_Simple_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_Simple_0_document_0_phone.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_Simple_0_document_0_phone.png",
         "label": "Simple",
@@ -13,21 +13,29 @@
         "expect": 0,
         "viewportLabel": "phone",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 24
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 650
-        }
+          "rawMisMatchPercentage": 8.796096134282807,
+          "misMatchPercentage": "8.80",
+          "diffBounds": {
+            "top": 172,
+            "left": 0,
+            "bottom": 982,
+            "right": 319
+          },
+          "analysisTime": 564
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_Simple_0_document_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_Simple_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_Simple_0_document_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_Simple_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_Simple_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_Simple_0_document_1_tablet.png",
         "label": "Simple",
@@ -41,16 +49,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 408
-        }
+          "rawMisMatchPercentage": 3.433958373182862,
+          "misMatchPercentage": "3.43",
+          "diffBounds": {
+            "top": 466,
+            "left": 100,
+            "bottom": 1238,
+            "right": 922
+          },
+          "analysisTime": 1663
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_Simple_0_document_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_pkra_bug_test_0_pkratest_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_pkra_bug_test_0_pkratest_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_pkra_bug_test_0_pkratest_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_pkra_bug_test_0_pkratest_0_phone.png",
         "selector": "#pkratest",
         "fileName": "puppet_backstop_features_pkra_bug_test_0_pkratest_0_phone.png",
         "label": "pkra bug test",
@@ -71,8 +87,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_pkra_bug_test_1_logoBlock_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_pkra_bug_test_1_logoBlock_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_pkra_bug_test_1_logoBlock_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_pkra_bug_test_1_logoBlock_0_phone.png",
         "selector": ".logoBlock",
         "fileName": "puppet_backstop_features_pkra_bug_test_1_logoBlock_0_phone.png",
         "label": "pkra bug test",
@@ -93,8 +109,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_pkra_bug_test_0_pkratest_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_pkra_bug_test_0_pkratest_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_pkra_bug_test_0_pkratest_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_pkra_bug_test_0_pkratest_1_tablet.png",
         "selector": "#pkratest",
         "fileName": "puppet_backstop_features_pkra_bug_test_0_pkratest_1_tablet.png",
         "label": "pkra bug test",
@@ -115,8 +131,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_pkra_bug_test_1_logoBlock_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_pkra_bug_test_1_logoBlock_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_pkra_bug_test_1_logoBlock_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_pkra_bug_test_1_logoBlock_1_tablet.png",
         "selector": ".logoBlock",
         "fileName": "puppet_backstop_features_pkra_bug_test_1_logoBlock_1_tablet.png",
         "label": "pkra bug test",
@@ -137,8 +153,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_delay_0_getItBlocknth-child3_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_delay_0_getItBlocknth-child3_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_delay_0_getItBlocknth-child3_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_delay_0_getItBlocknth-child3_0_phone.png",
         "selector": ".getItBlock:nth-child(3)",
         "fileName": "puppet_backstop_features_delay_0_getItBlocknth-child3_0_phone.png",
         "label": "delay",
@@ -152,16 +168,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 680
-        }
+          "rawMisMatchPercentage": 2.0256523662096417,
+          "misMatchPercentage": "2.03",
+          "diffBounds": {
+            "top": 85,
+            "left": 77,
+            "bottom": 119,
+            "right": 188
+          },
+          "analysisTime": 589
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_delay_0_getItBlocknth-child3_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_delay_0_getItBlocknth-child3_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_delay_0_getItBlocknth-child3_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_delay_0_getItBlocknth-child3_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_delay_0_getItBlocknth-child3_1_tablet.png",
         "selector": ".getItBlock:nth-child(3)",
         "fileName": "puppet_backstop_features_delay_0_getItBlocknth-child3_1_tablet.png",
         "label": "delay",
@@ -175,16 +199,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 411
-        }
+          "rawMisMatchPercentage": 1.5822262824660906,
+          "misMatchPercentage": "1.58",
+          "diffBounds": {
+            "top": 107,
+            "left": 316,
+            "bottom": 136,
+            "right": 516
+          },
+          "analysisTime": 120
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_delay_0_getItBlocknth-child3_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_readyEvent_0_moneyshot_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_readyEvent_0_moneyshot_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_readyEvent_0_moneyshot_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_readyEvent_0_moneyshot_0_phone.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_readyEvent_0_moneyshot_0_phone.png",
         "label": "readyEvent",
@@ -198,16 +230,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 302
-        }
+          "rawMisMatchPercentage": 2.4783163265306123,
+          "misMatchPercentage": "2.48",
+          "diffBounds": {
+            "top": 172,
+            "left": 22,
+            "bottom": 189,
+            "right": 295
+          },
+          "analysisTime": 493
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_readyEvent_0_moneyshot_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_readyEvent_0_moneyshot_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_readyEvent_0_moneyshot_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_readyEvent_0_moneyshot_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_readyEvent_0_moneyshot_1_tablet.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_readyEvent_0_moneyshot_1_tablet.png",
         "label": "readyEvent",
@@ -221,16 +261,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 540
-        }
+          "rawMisMatchPercentage": 1.1185117967332123,
+          "misMatchPercentage": "1.12",
+          "diffBounds": {
+            "top": 466,
+            "left": 252,
+            "bottom": 496,
+            "right": 744
+          },
+          "analysisTime": 500
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_readyEvent_0_moneyshot_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_readySelector_0_moneyshot_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_readySelector_0_moneyshot_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_readySelector_0_moneyshot_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_readySelector_0_moneyshot_0_phone.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_readySelector_0_moneyshot_0_phone.png",
         "label": "readySelector",
@@ -244,16 +292,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 391
-        }
+          "rawMisMatchPercentage": 2.4783163265306123,
+          "misMatchPercentage": "2.48",
+          "diffBounds": {
+            "top": 172,
+            "left": 22,
+            "bottom": 189,
+            "right": 295
+          },
+          "analysisTime": 102
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_readySelector_0_moneyshot_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_readySelector_0_moneyshot_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_readySelector_0_moneyshot_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_readySelector_0_moneyshot_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_readySelector_0_moneyshot_1_tablet.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_readySelector_0_moneyshot_1_tablet.png",
         "label": "readySelector",
@@ -267,16 +323,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 458
-        }
+          "rawMisMatchPercentage": 1.1185117967332123,
+          "misMatchPercentage": "1.12",
+          "diffBounds": {
+            "top": 466,
+            "left": 252,
+            "bottom": 496,
+            "right": 744
+          },
+          "analysisTime": 980
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_readySelector_0_moneyshot_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_noDelay_0_getItBlocknth-child3_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_noDelay_0_getItBlocknth-child3_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_noDelay_0_getItBlocknth-child3_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_noDelay_0_getItBlocknth-child3_0_phone.png",
         "selector": ".getItBlock:nth-child(3)",
         "fileName": "puppet_backstop_features_noDelay_0_getItBlocknth-child3_0_phone.png",
         "label": "noDelay",
@@ -290,16 +354,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 400
-        }
+          "rawMisMatchPercentage": 2.001326846528085,
+          "misMatchPercentage": "2.00",
+          "diffBounds": {
+            "top": 102,
+            "left": 77,
+            "bottom": 119,
+            "right": 188
+          },
+          "analysisTime": 645
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_noDelay_0_getItBlocknth-child3_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_noDelay_0_getItBlocknth-child3_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_noDelay_0_getItBlocknth-child3_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_noDelay_0_getItBlocknth-child3_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_noDelay_0_getItBlocknth-child3_1_tablet.png",
         "selector": ".getItBlock:nth-child(3)",
         "fileName": "puppet_backstop_features_noDelay_0_getItBlocknth-child3_1_tablet.png",
         "label": "noDelay",
@@ -313,16 +385,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 484
-        }
+          "rawMisMatchPercentage": 1.5822262824660906,
+          "misMatchPercentage": "1.58",
+          "diffBounds": {
+            "top": 107,
+            "left": 316,
+            "bottom": 136,
+            "right": 516
+          },
+          "analysisTime": 208
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_noDelay_0_getItBlocknth-child3_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expanded_0_getItBlock_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expanded_0_getItBlock_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expanded_0_getItBlock_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expanded_0_getItBlock_0_phone.png",
         "selector": ".getItBlock",
         "fileName": "puppet_backstop_features_expanded_0_getItBlock_0_phone.png",
         "label": "expanded",
@@ -336,16 +416,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.01",
-          "analysisTime": 253
-        }
+          "rawMisMatchPercentage": 11.363229502327247,
+          "misMatchPercentage": "11.36",
+          "diffBounds": {
+            "top": 52,
+            "left": 4,
+            "bottom": 117,
+            "right": 261
+          },
+          "analysisTime": 83
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expanded_0_getItBlock_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expanded_1_getItBlock__n1_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expanded_1_getItBlock__n1_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expanded_1_getItBlock__n1_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expanded_1_getItBlock__n1_0_phone.png",
         "selector": ".getItBlock.__n1",
         "fileName": "puppet_backstop_features_expanded_1_getItBlock__n1_0_phone.png",
         "label": "expanded",
@@ -359,16 +447,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.01",
-          "analysisTime": 393
-        }
+          "rawMisMatchPercentage": 5.840121136173767,
+          "misMatchPercentage": "5.84",
+          "diffBounds": {
+            "top": 52,
+            "left": 17,
+            "bottom": 89,
+            "right": 249
+          },
+          "analysisTime": 450
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expanded_1_getItBlock__n1_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expanded_2_getItBlock__n2_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expanded_2_getItBlock__n2_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expanded_2_getItBlock__n2_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expanded_2_getItBlock__n2_0_phone.png",
         "selector": ".getItBlock.__n2",
         "fileName": "puppet_backstop_features_expanded_2_getItBlock__n2_0_phone.png",
         "label": "expanded",
@@ -382,16 +478,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 365
-        }
+          "rawMisMatchPercentage": 2.0256523662096417,
+          "misMatchPercentage": "2.03",
+          "diffBounds": {
+            "top": 85,
+            "left": 77,
+            "bottom": 119,
+            "right": 188
+          },
+          "analysisTime": 382
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expanded_2_getItBlock__n2_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expanded_3_getItBlock__n3_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expanded_3_getItBlock__n3_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expanded_3_getItBlock__n3_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expanded_3_getItBlock__n3_0_phone.png",
         "selector": ".getItBlock.__n3",
         "fileName": "puppet_backstop_features_expanded_3_getItBlock__n3_0_phone.png",
         "label": "expanded",
@@ -412,8 +516,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expanded_0_getItBlock_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expanded_0_getItBlock_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expanded_0_getItBlock_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expanded_0_getItBlock_1_tablet.png",
         "selector": ".getItBlock",
         "fileName": "puppet_backstop_features_expanded_0_getItBlock_1_tablet.png",
         "label": "expanded",
@@ -427,17 +531,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "5.76",
-          "analysisTime": 401
+          "rawMisMatchPercentage": 9.407858328721638,
+          "misMatchPercentage": "9.41",
+          "diffBounds": {
+            "top": 57,
+            "left": 25,
+            "bottom": 129,
+            "right": 807
+          },
+          "analysisTime": 505
         },
-        "diffImage": "../bitmaps_test/20191118-081005/failed_diff_puppet_backstop_features_expanded_0_getItBlock_1_tablet.png"
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expanded_0_getItBlock_1_tablet.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expanded_1_getItBlock__n1_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expanded_1_getItBlock__n1_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expanded_1_getItBlock__n1_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expanded_1_getItBlock__n1_1_tablet.png",
         "selector": ".getItBlock.__n1",
         "fileName": "puppet_backstop_features_expanded_1_getItBlock__n1_1_tablet.png",
         "label": "expanded",
@@ -451,16 +562,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 220
-        }
+          "rawMisMatchPercentage": 5.3180477200973035,
+          "misMatchPercentage": "5.32",
+          "diffBounds": {
+            "top": 57,
+            "left": 152,
+            "bottom": 86,
+            "right": 680
+          },
+          "analysisTime": 492
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expanded_1_getItBlock__n1_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expanded_2_getItBlock__n2_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expanded_2_getItBlock__n2_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expanded_2_getItBlock__n2_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expanded_2_getItBlock__n2_1_tablet.png",
         "selector": ".getItBlock.__n2",
         "fileName": "puppet_backstop_features_expanded_2_getItBlock__n2_1_tablet.png",
         "label": "expanded",
@@ -474,16 +593,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 472
-        }
+          "rawMisMatchPercentage": 1.5822262824660906,
+          "misMatchPercentage": "1.58",
+          "diffBounds": {
+            "top": 107,
+            "left": 316,
+            "bottom": 136,
+            "right": 516
+          },
+          "analysisTime": 412
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expanded_2_getItBlock__n2_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expanded_3_getItBlock__n3_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expanded_3_getItBlock__n3_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expanded_3_getItBlock__n3_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expanded_3_getItBlock__n3_1_tablet.png",
         "selector": ".getItBlock.__n3",
         "fileName": "puppet_backstop_features_expanded_3_getItBlock__n3_1_tablet.png",
         "label": "expanded",
@@ -504,8 +631,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_notExpanded_0_getItBlock_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_notExpanded_0_getItBlock_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_notExpanded_0_getItBlock_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_notExpanded_0_getItBlock_0_phone.png",
         "selector": ".getItBlock",
         "fileName": "puppet_backstop_features_notExpanded_0_getItBlock_0_phone.png",
         "label": "notExpanded",
@@ -519,16 +646,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.01",
-          "analysisTime": 347
-        }
+          "rawMisMatchPercentage": 11.363229502327247,
+          "misMatchPercentage": "11.36",
+          "diffBounds": {
+            "top": 52,
+            "left": 4,
+            "bottom": 117,
+            "right": 261
+          },
+          "analysisTime": 163
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_notExpanded_0_getItBlock_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_notExpanded_0_getItBlock_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_notExpanded_0_getItBlock_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_notExpanded_0_getItBlock_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_notExpanded_0_getItBlock_1_tablet.png",
         "selector": ".getItBlock",
         "fileName": "puppet_backstop_features_notExpanded_0_getItBlock_1_tablet.png",
         "label": "notExpanded",
@@ -542,16 +677,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.01",
-          "analysisTime": 369
-        }
+          "rawMisMatchPercentage": 9.407858328721638,
+          "misMatchPercentage": "9.41",
+          "diffBounds": {
+            "top": 57,
+            "left": 25,
+            "bottom": 129,
+            "right": 807
+          },
+          "analysisTime": 700
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_notExpanded_0_getItBlock_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expect_0_getItBlock_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expect_0_getItBlock_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expect_0_getItBlock_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expect_0_getItBlock_0_phone.png",
         "selector": ".getItBlock",
         "fileName": "puppet_backstop_features_expect_0_getItBlock_0_phone.png",
         "label": "expect",
@@ -565,17 +708,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "9.87",
-          "analysisTime": 449
+          "rawMisMatchPercentage": 11.363229502327247,
+          "misMatchPercentage": "11.36",
+          "diffBounds": {
+            "top": 52,
+            "left": 4,
+            "bottom": 117,
+            "right": 261
+          },
+          "analysisTime": 104
         },
-        "diffImage": "../bitmaps_test/20191118-081005/failed_diff_puppet_backstop_features_expect_0_getItBlock_0_phone.png"
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expect_0_getItBlock_0_phone.png"
       },
       "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expect_1_getItBlock__n1_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expect_1_getItBlock__n1_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expect_1_getItBlock__n1_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expect_1_getItBlock__n1_0_phone.png",
         "selector": ".getItBlock.__n1",
         "fileName": "puppet_backstop_features_expect_1_getItBlock__n1_0_phone.png",
         "label": "expect",
@@ -589,16 +739,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.01",
-          "analysisTime": 402
-        }
+          "rawMisMatchPercentage": 5.840121136173767,
+          "misMatchPercentage": "5.84",
+          "diffBounds": {
+            "top": 52,
+            "left": 17,
+            "bottom": 89,
+            "right": 249
+          },
+          "analysisTime": 475
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expect_1_getItBlock__n1_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expect_2_getItBlock__n2_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expect_2_getItBlock__n2_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expect_2_getItBlock__n2_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expect_2_getItBlock__n2_0_phone.png",
         "selector": ".getItBlock.__n2",
         "fileName": "puppet_backstop_features_expect_2_getItBlock__n2_0_phone.png",
         "label": "expect",
@@ -612,16 +770,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 318
-        }
+          "rawMisMatchPercentage": 3.6620964175143738,
+          "misMatchPercentage": "3.66",
+          "diffBounds": {
+            "top": 52,
+            "left": 77,
+            "bottom": 119,
+            "right": 187
+          },
+          "analysisTime": 91
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expect_2_getItBlock__n2_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expect_3_getItBlock__n3_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expect_3_getItBlock__n3_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expect_3_getItBlock__n3_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expect_3_getItBlock__n3_0_phone.png",
         "selector": ".getItBlock.__n3",
         "fileName": "puppet_backstop_features_expect_3_getItBlock__n3_0_phone.png",
         "label": "expect",
@@ -642,8 +808,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expect_0_getItBlock_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expect_0_getItBlock_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expect_0_getItBlock_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expect_0_getItBlock_1_tablet.png",
         "selector": ".getItBlock",
         "fileName": "puppet_backstop_features_expect_0_getItBlock_1_tablet.png",
         "label": "expect",
@@ -657,16 +823,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.01",
-          "analysisTime": 528
-        }
+          "rawMisMatchPercentage": 9.407858328721638,
+          "misMatchPercentage": "9.41",
+          "diffBounds": {
+            "top": 57,
+            "left": 25,
+            "bottom": 129,
+            "right": 807
+          },
+          "analysisTime": 358
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expect_0_getItBlock_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expect_1_getItBlock__n1_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expect_1_getItBlock__n1_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expect_1_getItBlock__n1_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expect_1_getItBlock__n1_1_tablet.png",
         "selector": ".getItBlock.__n1",
         "fileName": "puppet_backstop_features_expect_1_getItBlock__n1_1_tablet.png",
         "label": "expect",
@@ -680,16 +854,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 397
-        }
+          "rawMisMatchPercentage": 5.3180477200973035,
+          "misMatchPercentage": "5.32",
+          "diffBounds": {
+            "top": 57,
+            "left": 152,
+            "bottom": 86,
+            "right": 680
+          },
+          "analysisTime": 250
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expect_1_getItBlock__n1_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expect_2_getItBlock__n2_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expect_2_getItBlock__n2_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expect_2_getItBlock__n2_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expect_2_getItBlock__n2_1_tablet.png",
         "selector": ".getItBlock.__n2",
         "fileName": "puppet_backstop_features_expect_2_getItBlock__n2_1_tablet.png",
         "label": "expect",
@@ -703,16 +885,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 336
-        }
+          "rawMisMatchPercentage": 1.5822262824660906,
+          "misMatchPercentage": "1.58",
+          "diffBounds": {
+            "top": 107,
+            "left": 316,
+            "bottom": 136,
+            "right": 516
+          },
+          "analysisTime": 607
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_expect_2_getItBlock__n2_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_expect_3_getItBlock__n3_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_expect_3_getItBlock__n3_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_expect_3_getItBlock__n3_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_expect_3_getItBlock__n3_1_tablet.png",
         "selector": ".getItBlock.__n3",
         "fileName": "puppet_backstop_features_expect_3_getItBlock__n3_1_tablet.png",
         "label": "expect",
@@ -733,8 +923,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_magicSelectors_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_magicSelectors_0_document_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_magicSelectors_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_magicSelectors_0_document_0_phone.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_magicSelectors_0_document_0_phone.png",
         "label": "magicSelectors",
@@ -743,21 +933,29 @@
         "expect": 0,
         "viewportLabel": "phone",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 24
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 397
-        }
+          "rawMisMatchPercentage": 8.796096134282807,
+          "misMatchPercentage": "8.80",
+          "diffBounds": {
+            "top": 172,
+            "left": 0,
+            "bottom": 982,
+            "right": 319
+          },
+          "analysisTime": 186
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_magicSelectors_0_document_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_magicSelectors_1_viewport_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_magicSelectors_1_viewport_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_magicSelectors_1_viewport_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_magicSelectors_1_viewport_0_phone.png",
         "selector": "viewport",
         "fileName": "puppet_backstop_features_magicSelectors_1_viewport_0_phone.png",
         "label": "magicSelectors",
@@ -771,16 +969,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 477
-        }
+          "rawMisMatchPercentage": 5.462239583333333,
+          "misMatchPercentage": "5.46",
+          "diffBounds": {
+            "top": 172,
+            "left": 22,
+            "bottom": 386,
+            "right": 295
+          },
+          "analysisTime": 135
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_magicSelectors_1_viewport_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_magicSelectors_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_magicSelectors_0_document_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_magicSelectors_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_magicSelectors_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_magicSelectors_0_document_1_tablet.png",
         "label": "magicSelectors",
@@ -794,16 +1000,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 92
-        }
+          "rawMisMatchPercentage": 3.433958373182862,
+          "misMatchPercentage": "3.43",
+          "diffBounds": {
+            "top": 466,
+            "left": 100,
+            "bottom": 1238,
+            "right": 922
+          },
+          "analysisTime": 1295
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_magicSelectors_0_document_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_magicSelectors_1_viewport_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_magicSelectors_1_viewport_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_magicSelectors_1_viewport_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_magicSelectors_1_viewport_1_tablet.png",
         "selector": "viewport",
         "fileName": "puppet_backstop_features_magicSelectors_1_viewport_1_tablet.png",
         "label": "magicSelectors",
@@ -817,16 +1031,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 274
-        }
+          "rawMisMatchPercentage": 2.927144368489583,
+          "misMatchPercentage": "2.93",
+          "diffBounds": {
+            "top": 466,
+            "left": 100,
+            "bottom": 680,
+            "right": 922
+          },
+          "analysisTime": 1656
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_magicSelectors_1_viewport_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_hideSelectors_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_hideSelectors_0_document_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_hideSelectors_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_hideSelectors_0_document_0_phone.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_hideSelectors_0_document_0_phone.png",
         "label": "hideSelectors",
@@ -835,21 +1057,29 @@
         "expect": 0,
         "viewportLabel": "phone",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 24
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 334
-        }
+          "rawMisMatchPercentage": 5.550928280773144,
+          "misMatchPercentage": "5.55",
+          "diffBounds": {
+            "top": 49,
+            "left": 0,
+            "bottom": 982,
+            "right": 319
+          },
+          "analysisTime": 155
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_hideSelectors_0_document_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_hideSelectors_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_hideSelectors_0_document_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_hideSelectors_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_hideSelectors_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_hideSelectors_0_document_1_tablet.png",
         "label": "hideSelectors",
@@ -863,16 +1093,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 117
-        }
+          "rawMisMatchPercentage": 7.390867085883703,
+          "misMatchPercentage": "7.39",
+          "diffBounds": {
+            "top": 48,
+            "left": 264,
+            "bottom": 496,
+            "right": 756
+          },
+          "analysisTime": 1269
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_hideSelectors_0_document_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_removeSelectors_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_removeSelectors_0_document_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_removeSelectors_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_removeSelectors_0_document_0_phone.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_removeSelectors_0_document_0_phone.png",
         "label": "removeSelectors",
@@ -886,16 +1124,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 257
-        }
+          "rawMisMatchPercentage": 1.2649739583333333,
+          "misMatchPercentage": "1.26",
+          "diffBounds": {
+            "top": 49,
+            "left": 22,
+            "bottom": 66,
+            "right": 295
+          },
+          "analysisTime": 379
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_removeSelectors_0_document_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_removeSelectors_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_removeSelectors_0_document_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_removeSelectors_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_removeSelectors_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_removeSelectors_0_document_1_tablet.png",
         "label": "removeSelectors",
@@ -909,16 +1155,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 391
-        }
+          "rawMisMatchPercentage": 0.7836659749348959,
+          "misMatchPercentage": "0.78",
+          "diffBounds": {
+            "top": 51,
+            "left": 264,
+            "bottom": 81,
+            "right": 756
+          },
+          "analysisTime": 1131
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_removeSelectors_0_document_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_notFound_0_monkey_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_notFound_0_monkey_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_notFound_0_monkey_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_notFound_0_monkey_0_phone.png",
         "selector": ".monkey",
         "fileName": "puppet_backstop_features_notFound_0_monkey_0_phone.png",
         "label": "notFound",
@@ -939,8 +1193,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_notFound_0_monkey_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_notFound_0_monkey_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_notFound_0_monkey_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_notFound_0_monkey_1_tablet.png",
         "selector": ".monkey",
         "fileName": "puppet_backstop_features_notFound_0_monkey_1_tablet.png",
         "label": "notFound",
@@ -961,8 +1215,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_notVisible_0_noShow_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_notVisible_0_noShow_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_notVisible_0_noShow_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_notVisible_0_noShow_0_phone.png",
         "selector": "#noShow",
         "fileName": "puppet_backstop_features_notVisible_0_noShow_0_phone.png",
         "label": "notVisible",
@@ -983,8 +1237,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_notVisible_0_noShow_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_notVisible_0_noShow_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_notVisible_0_noShow_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_notVisible_0_noShow_1_tablet.png",
         "selector": "#noShow",
         "fileName": "puppet_backstop_features_notVisible_0_noShow_1_tablet.png",
         "label": "notVisible",
@@ -1005,8 +1259,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_cookies_0_moneyshot_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_cookies_0_moneyshot_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_cookies_0_moneyshot_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_cookies_0_moneyshot_0_phone.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_cookies_0_moneyshot_0_phone.png",
         "label": "cookies",
@@ -1020,16 +1274,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 366
-        }
+          "rawMisMatchPercentage": 4.682800751879699,
+          "misMatchPercentage": "4.68",
+          "diffBounds": {
+            "top": 142,
+            "left": 22,
+            "bottom": 210,
+            "right": 295
+          },
+          "analysisTime": 470
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_cookies_0_moneyshot_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_cookies_0_moneyshot_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_cookies_0_moneyshot_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_cookies_0_moneyshot_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_cookies_0_moneyshot_1_tablet.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_cookies_0_moneyshot_1_tablet.png",
         "label": "cookies",
@@ -1043,16 +1305,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 401
-        }
+          "rawMisMatchPercentage": 2.317460317460317,
+          "misMatchPercentage": "2.32",
+          "diffBounds": {
+            "top": 375,
+            "left": 252,
+            "bottom": 449,
+            "right": 744
+          },
+          "analysisTime": 521
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_cookies_0_moneyshot_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_hover_0_moneyshot_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_hover_0_moneyshot_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_hover_0_moneyshot_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_hover_0_moneyshot_0_phone.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_hover_0_moneyshot_0_phone.png",
         "label": "hover",
@@ -1066,16 +1336,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 233
-        }
+          "rawMisMatchPercentage": 8.673469387755102,
+          "misMatchPercentage": "8.67",
+          "diffBounds": {
+            "top": 43,
+            "left": 22,
+            "bottom": 189,
+            "right": 295
+          },
+          "analysisTime": 143
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_hover_0_moneyshot_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_hover_0_moneyshot_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_hover_0_moneyshot_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_hover_0_moneyshot_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_hover_0_moneyshot_1_tablet.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_hover_0_moneyshot_1_tablet.png",
         "label": "hover",
@@ -1089,16 +1367,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 280
-        }
+          "rawMisMatchPercentage": 6.530127041742287,
+          "misMatchPercentage": "6.53",
+          "diffBounds": {
+            "top": 30,
+            "left": 252,
+            "bottom": 496,
+            "right": 744
+          },
+          "analysisTime": 665
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_hover_0_moneyshot_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_click_0_moneyshot_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_click_0_moneyshot_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_click_0_moneyshot_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_click_0_moneyshot_0_phone.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_click_0_moneyshot_0_phone.png",
         "label": "click",
@@ -1112,16 +1398,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 263
-        }
+          "rawMisMatchPercentage": 2.4783163265306123,
+          "misMatchPercentage": "2.48",
+          "diffBounds": {
+            "top": 172,
+            "left": 22,
+            "bottom": 189,
+            "right": 295
+          },
+          "analysisTime": 565
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_click_0_moneyshot_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_click_0_moneyshot_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_click_0_moneyshot_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_click_0_moneyshot_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_click_0_moneyshot_1_tablet.png",
         "selector": ".moneyshot",
         "fileName": "puppet_backstop_features_click_0_moneyshot_1_tablet.png",
         "label": "click",
@@ -1135,16 +1429,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 247
-        }
+          "rawMisMatchPercentage": 1.1185117967332123,
+          "misMatchPercentage": "1.12",
+          "diffBounds": {
+            "top": 466,
+            "left": 252,
+            "bottom": 496,
+            "right": 744
+          },
+          "analysisTime": 299
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_click_0_moneyshot_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scrollToSelector_0_lemurFace_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scrollToSelector_0_lemurFace_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scrollToSelector_0_lemurFace_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scrollToSelector_0_lemurFace_0_phone.png",
         "selector": ".lemurFace",
         "fileName": "puppet_backstop_features_scrollToSelector_0_lemurFace_0_phone.png",
         "label": "scrollToSelector",
@@ -1165,8 +1467,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scrollToSelector_0_lemurFace_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scrollToSelector_0_lemurFace_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scrollToSelector_0_lemurFace_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scrollToSelector_0_lemurFace_1_tablet.png",
         "selector": ".lemurFace",
         "fileName": "puppet_backstop_features_scrollToSelector_0_lemurFace_1_tablet.png",
         "label": "scrollToSelector",
@@ -1187,8 +1489,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports_0_document_0_Galaxy-S5.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports_0_document_0_Galaxy-S5.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports_0_document_0_Galaxy-S5.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports_0_document_0_Galaxy-S5.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports_0_document_0_Galaxy-S5.png",
         "label": "scenarioSpecificViewports",
@@ -1202,16 +1504,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 318
-        }
+          "rawMisMatchPercentage": 4.8258053221288515,
+          "misMatchPercentage": "4.83",
+          "diffBounds": {
+            "top": 189,
+            "left": 31,
+            "bottom": 885,
+            "right": 328
+          },
+          "analysisTime": 243
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports_0_document_0_Galaxy-S5.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports_1_viewport_0_Galaxy-S5.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports_1_viewport_0_Galaxy-S5.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports_1_viewport_0_Galaxy-S5.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports_1_viewport_0_Galaxy-S5.png",
         "selector": "viewport",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports_1_viewport_0_Galaxy-S5.png",
         "label": "scenarioSpecificViewports",
@@ -1225,16 +1535,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 457
-        }
+          "rawMisMatchPercentage": 5.822916666666666,
+          "misMatchPercentage": "5.82",
+          "diffBounds": {
+            "top": 189,
+            "left": 31,
+            "bottom": 563,
+            "right": 328
+          },
+          "analysisTime": 197
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports_1_viewport_0_Galaxy-S5.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_0_phone.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_0_phone.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_0_phone.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_0_phone.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_0_phone.png",
         "label": "scenarioSpecificViewports-withEmptyViewports",
@@ -1243,21 +1561,29 @@
         "expect": 0,
         "viewportLabel": "phone",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": 24
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 252
-        }
+          "rawMisMatchPercentage": 8.796096134282807,
+          "misMatchPercentage": "8.80",
+          "diffBounds": {
+            "top": 172,
+            "left": 0,
+            "bottom": 982,
+            "right": 319
+          },
+          "analysisTime": 219
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_0_phone.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_1_tablet.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_1_tablet.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_1_tablet.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_1_tablet.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_1_tablet.png",
         "label": "scenarioSpecificViewports-withEmptyViewports",
@@ -1271,16 +1597,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 56
-        }
+          "rawMisMatchPercentage": 3.433958373182862,
+          "misMatchPercentage": "3.43",
+          "diffBounds": {
+            "top": 466,
+            "left": 100,
+            "bottom": 1238,
+            "right": 922
+          },
+          "analysisTime": 847
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports-withEmptyViewports_0_document_1_tablet.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_0_Pixel-2.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_0_Pixel-2.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_0_Pixel-2.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_0_Pixel-2.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_0_Pixel-2.png",
         "label": "scenarioSpecificViewports-withMultipleViewports",
@@ -1294,16 +1628,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 125
-        }
+          "rawMisMatchPercentage": 4.270969394288642,
+          "misMatchPercentage": "4.27",
+          "diffBounds": {
+            "top": 211,
+            "left": 36,
+            "bottom": 883,
+            "right": 374
+          },
+          "analysisTime": 227
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_0_Pixel-2.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_1_Pixel2-XL.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_1_Pixel2-XL.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_1_Pixel2-XL.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_1_Pixel2-XL.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_1_Pixel2-XL.png",
         "label": "scenarioSpecificViewports-withMultipleViewports",
@@ -1317,16 +1659,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 64
-        }
+          "rawMisMatchPercentage": 4.270969394288642,
+          "misMatchPercentage": "4.27",
+          "diffBounds": {
+            "top": 211,
+            "left": 36,
+            "bottom": 883,
+            "right": 374
+          },
+          "analysisTime": 134
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_1_Pixel2-XL.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_2_iPhone-X.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_2_iPhone-X.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_2_iPhone-X.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_2_iPhone-X.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_2_iPhone-X.png",
         "label": "scenarioSpecificViewports-withMultipleViewports",
@@ -1335,21 +1685,29 @@
         "expect": 0,
         "viewportLabel": "iPhone-X",
         "diff": {
-          "isSameDimensions": true,
+          "isSameDimensions": false,
           "dimensionDifference": {
             "width": 0,
-            "height": 0
+            "height": -24
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 226
-        }
+          "rawMisMatchPercentage": 7.962143354210161,
+          "misMatchPercentage": "7.96",
+          "diffBounds": {
+            "top": 195,
+            "left": 0,
+            "bottom": 957,
+            "right": 374
+          },
+          "analysisTime": 373
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_2_iPhone-X.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_3_iPad-Pro.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_3_iPad-Pro.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_3_iPad-Pro.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_3_iPad-Pro.png",
         "selector": "document",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_3_iPad-Pro.png",
         "label": "scenarioSpecificViewports-withMultipleViewports",
@@ -1363,16 +1721,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 58
-        }
+          "rawMisMatchPercentage": 3.2856395269033674,
+          "misMatchPercentage": "3.29",
+          "diffBounds": {
+            "top": 466,
+            "left": 100,
+            "bottom": 1238,
+            "right": 922
+          },
+          "analysisTime": 662
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports-withMultipleViewports_0_document_3_iPad-Pro.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_0_getItBlock_0_iPad-Pro.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_0_getItBlock_0_iPad-Pro.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_0_getItBlock_0_iPad-Pro.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_0_getItBlock_0_iPad-Pro.png",
         "selector": ".getItBlock",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_0_getItBlock_0_iPad-Pro.png",
         "label": "scenarioSpecificViewports-withExpandSelector",
@@ -1386,16 +1752,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.01",
-          "analysisTime": 264
-        }
+          "rawMisMatchPercentage": 9.407858328721638,
+          "misMatchPercentage": "9.41",
+          "diffBounds": {
+            "top": 57,
+            "left": 25,
+            "bottom": 129,
+            "right": 807
+          },
+          "analysisTime": 183
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_0_getItBlock_0_iPad-Pro.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_1_getItBlock__n1_0_iPad-Pro.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_1_getItBlock__n1_0_iPad-Pro.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_1_getItBlock__n1_0_iPad-Pro.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_1_getItBlock__n1_0_iPad-Pro.png",
         "selector": ".getItBlock.__n1",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_1_getItBlock__n1_0_iPad-Pro.png",
         "label": "scenarioSpecificViewports-withExpandSelector",
@@ -1409,16 +1783,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 300
-        }
+          "rawMisMatchPercentage": 5.3180477200973035,
+          "misMatchPercentage": "5.32",
+          "diffBounds": {
+            "top": 57,
+            "left": 152,
+            "bottom": 86,
+            "right": 680
+          },
+          "analysisTime": 128
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_1_getItBlock__n1_0_iPad-Pro.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_2_getItBlock__n2_0_iPad-Pro.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_2_getItBlock__n2_0_iPad-Pro.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_2_getItBlock__n2_0_iPad-Pro.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_2_getItBlock__n2_0_iPad-Pro.png",
         "selector": ".getItBlock.__n2",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_2_getItBlock__n2_0_iPad-Pro.png",
         "label": "scenarioSpecificViewports-withExpandSelector",
@@ -1432,16 +1814,24 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 298
-        }
+          "rawMisMatchPercentage": 1.5822262824660906,
+          "misMatchPercentage": "1.58",
+          "diffBounds": {
+            "top": 107,
+            "left": 316,
+            "bottom": 136,
+            "right": 516
+          },
+          "analysisTime": 141
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_2_getItBlock__n2_0_iPad-Pro.png"
       },
-      "status": "pass"
+      "status": "fail"
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_3_getItBlock__n3_0_iPad-Pro.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_3_getItBlock__n3_0_iPad-Pro.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_3_getItBlock__n3_0_iPad-Pro.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_3_getItBlock__n3_0_iPad-Pro.png",
         "selector": ".getItBlock.__n3",
         "fileName": "puppet_backstop_features_scenarioSpecificViewports-withExpandSelector_3_getItBlock__n3_0_iPad-Pro.png",
         "label": "scenarioSpecificViewports-withExpandSelector",
@@ -1462,8 +1852,8 @@
     },
     {
       "pair": {
-        "reference": "../bitmaps_reference/puppet_backstop_features_keyPressSelector_0_dividnavbar_0_Desktop.png",
-        "test": "../bitmaps_test/20191118-081005/puppet_backstop_features_keyPressSelector_0_dividnavbar_0_Desktop.png",
+        "reference": "..\\bitmaps_reference\\puppet_backstop_features_keyPressSelector_0_dividnavbar_0_Desktop.png",
+        "test": "..\\bitmaps_test\\20200629-174336\\puppet_backstop_features_keyPressSelector_0_dividnavbar_0_Desktop.png",
         "selector": "div[id=navbar]",
         "fileName": "puppet_backstop_features_keyPressSelector_0_dividnavbar_0_Desktop.png",
         "label": "keyPressSelector",
@@ -1477,11 +1867,19 @@
             "width": 0,
             "height": 0
           },
-          "misMatchPercentage": "0.00",
-          "analysisTime": 82
-        }
+          "rawMisMatchPercentage": 6.508333333333334,
+          "misMatchPercentage": "6.51",
+          "diffBounds": {
+            "top": 18,
+            "left": 1,
+            "bottom": 34,
+            "right": 706
+          },
+          "analysisTime": 115
+        },
+        "diffImage": "..\\bitmaps_test\\20200629-174336\\failed_diff_puppet_backstop_features_keyPressSelector_0_dividnavbar_0_Desktop.png"
       },
-      "status": "pass"
+      "status": "fail"
     }
   ]
 }
