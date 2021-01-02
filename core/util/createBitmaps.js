@@ -4,6 +4,7 @@ var each = require('./each');
 var pMap = require('p-map');
 
 var runPuppet = require('./runPuppet');
+const runPlaywright = require("./runPlaywright");
 
 const ensureDirectoryPath = require('./ensureDirectoryPath');
 var logger = require('./logger')('createBitmaps');
@@ -129,6 +130,8 @@ function delegateScenarios (config) {
 
   if (config.engine.startsWith('puppet')) {
     return pMap(scenarioViews, runPuppet, { concurrency: asyncCaptureLimit });
+  } else if (config.engine.startsWith('playwright')) {
+    return pMap(scenarioViews, runPlaywright, { concurrency: asyncCaptureLimit });
   } else if (/chrom./i.test(config.engine)) {
     logger.error(`Chromy is no longer supported in version 5+. Please use version 4.x.x for chromy support.`);
   } else {
