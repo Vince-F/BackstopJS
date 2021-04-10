@@ -1,15 +1,14 @@
-var path = require('path');
-var map = require('p-map');
-var fs = require('fs');
-var cp = require('child_process');
+const path = require('path');
+const fs = require('fs');
 
 var Reporter = require('./../Reporter');
-var logger = require('./../logger')('compare');
+const logger = require('./../logger')('compare');
 var storeFailedDiffStub = require('./store-failed-diff-stub.js');
+const WorkerPool = require("../workerPool");
 
-var ASYNC_COMPARE_LIMIT = 20;
+const ASYNC_COMPARE_LIMIT = 20;
 
-function comparePair (pair, report, config, compareConfig) {
+function comparePair (pair, report, config, compareConfig, workerPool) {
   var Test = report.addTest(pair);
 
   var referencePath = pair.reference ? path.resolve(config.projectPath, pair.reference) : '';
@@ -54,21 +53,17 @@ function comparePair (pair, report, config, compareConfig) {
   }
 
   var resembleOutputSettings = config.resembleOutputOptions;
-  return compareImages(referencePath, testPath, pair, resembleOutputSettings, Test);
+  return compareImages(referencePath, testPath, pair, resembleOutputSettings, Test, workerPool);
 }
 
-function compareImages (referencePath, testPath, pair, resembleOutputSettings, Test) {
-  return new Promise(function (resolve, reject) {
-    var worker = cp.fork(require.resolve('./compare'));
-    worker.send({
-      referencePath: referencePath,
-      testPath: testPath,
-      resembleOutputSettings: resembleOutputSettings,
-      pair: pair
-    });
-
-    worker.on('message', function (data) {
-      worker.kill();
+function compareImages (referencePath, testPath, pair, resembleOutputSettings, Test, workerPool) {
+  return workerPool.run({
+    referencePath: referencePath,
+    testPath: testPath,
+    resembleOutputSettings: resembleOutputSettings,
+    pair: pair
+  })
+    .then((data) => {
       Test.status = data.status;
       pair.diff = data.diff;
 
@@ -79,9 +74,8 @@ function compareImages (referencePath, testPath, pair, resembleOutputSettings, T
         logger.success('OK: ' + pair.label + ' ' + pair.fileName);
       }
 
-      resolve(data);
+      return data;
     });
-  });
 }
 
 module.exports = function (config) {
@@ -89,11 +83,13 @@ module.exports = function (config) {
 
   var report = new Reporter(config.ciReport.testSuiteName);
   var asyncCompareLimit = config.asyncCompareLimit || ASYNC_COMPARE_LIMIT;
+  const workerPool = new WorkerPool(require.resolve('./compare'), asyncCompareLimit);
   report.id = config.id;
 
-  return map(compareConfig.testPairs, pair => comparePair(pair, report, config, compareConfig), { concurrency: asyncCompareLimit })
-    .then(
-      () => report,
-      e => logger.error('The comparison failed with error: ' + e)
-    );
+  return Promise.all(compareConfig.testPairs.map((pair) => {
+    return comparePair(pair, report, config, compareConfig, workerPool);
+  }))
+    .then(() => report)
+    .catch((e) => logger.error('The comparison failed with error: ' + e))
+    .finally(() => { workerPool.killAllWorkers(); });
 };

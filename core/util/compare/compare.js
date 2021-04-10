@@ -1,8 +1,9 @@
+const { parentPort } = require('worker_threads');
 var compareHashes = require('./compare-hash');
 var compareResemble = require('./compare-resemble');
 var storeFailedDiff = require('./store-failed-diff.js');
 
-process.on('message', compare);
+parentPort.on('message', compare);
 
 function compare (data) {
   var { referencePath, testPath, resembleOutputSettings, pair } = data;
@@ -26,5 +27,5 @@ function compare (data) {
 }
 
 function sendMessage (data) {
-  process.send(data);
+  parentPort.postMessage(data);
 }

@@ -7,7 +7,7 @@
     "backstop": "./cli/index.js"
   },
   "scripts": {
-    "lint": "eslint 'compare/*.js' 'compare/src/**/*.js' 'core/**/*.js' 'cli/**/*.js' 'capture/**/*.js' 'test/**/*.js'",
+    "lint": "eslint \"compare/src/**/*.js\" \"core/**/*.js\" \"cli/**/*.js\" \"capture/**/*.js\" \"test/**/*.js\"",
     "format": "prettier-eslint --write \"compare/src/**/*.js\"",
     "genConfig": "node ./cli/index.js genConfig",
     "init": "node ./cli/index.js init",
@@ -93,7 +93,6 @@
     "object-hash": "1.1.5",
     "opn": "^5.3.0",
     "os": "^0.1.1",
-    "p-map": "^1.1.1",
     "path": "^0.12.7",
     "portfinder": "^1.0.17",
     "puppeteer": "^7.1.0",
